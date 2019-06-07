@@ -57,4 +57,20 @@ window.addEventListener("load", () => {
   document
     .querySelector("form#controls")
     .addEventListener("change", refreshCanvas);
+
+  canvas.addEventListener("mousedown", () => {
+    function move(event) {
+      document.querySelector("#xpos").value =
+        Number(document.querySelector("#xpos").value) + event.movementX;
+      document.querySelector("#ypos").value =
+        Number(document.querySelector("#ypos").value) + event.movementY;
+      refreshCanvas();
+    }
+
+    canvas.addEventListener("mousemove", move);
+
+    canvas.addEventListener("mouseup", () =>
+      canvas.removeEventListener("mousemove", move)
+    );
+  });
 });
