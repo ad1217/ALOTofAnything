@@ -1,0 +1,28 @@
+<head>
+  <title>ALOT of Anything</title>
+</head>
+
+<div>
+  <div>
+    <label> Pick a file: <input id="background" type="file"/></label>
+    <form id="controls">
+      <div>
+        <label> X position <input id="xpos" type="number" value="0"/></label>
+        <label> Y position <input id="ypos" type="number" value="0"/></label>
+        <label>
+          Scale <input id="scale" type="number" min="0" step=".1" value="1"
+        /></label>
+      </div>
+      <div>
+        <label>
+          Text <input id="text" type="text" value="ALOT of Anything"
+        /></label>
+      </div>
+    </form>
+    <div><a id="download" download="ALOT.png"> Download </a></div>
+
+    <canvas width="800" height="600"></canvas>
+  </div>
+
+  <script src="index.js"></script>
+</div>

@@ -1,0 +1,26 @@
+{
+  "name": "alot-of-anything",
+  "version": "1.0.0",
+  "description": "A quick webapp to make an ALOT from an image",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --public-url ./",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ad1217/ALOTofAnything.git"
+  },
+  "keywords": [
+    "ALOT"
+  ],
+  "author": "Adam Goldsmith <contact@adamgoldsmith.name>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ad1217/ALOTofAnything/issues"
+  },
+  "homepage": "https://github.com/ad1217/ALOTofAnything#readme",
+  "devDependencies": {
+    "parcel": "^1.12.3"
+  }
+}
